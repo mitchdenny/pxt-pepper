@@ -17,7 +17,21 @@ namespace pxsim.hare {
     }
 }
 
+namespace pxsim.pepper {
+    /**
+     * Get pepper to speak.
+     * @param message the message to speak.
+     * @param address the address of the pepper robot.
+     */
+    //% blockId=pepperSpeak block="speak %message on %address"
+    export function speakAsync(message: string, address: string) {
+        return Promise.delay(1000);
+    }
+}
+
 namespace pxsim.turtle {
+
+
     /**
      * Moves the sprite forward
      * @param steps number of steps to move, eg: 1

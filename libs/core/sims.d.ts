@@ -14,6 +14,17 @@ declare namespace hare {
     function onLand(handler: (height: number, more: number, most: number) => void): void;
 
 }
+declare namespace pepper {
+    /**
+     * Get pepper to speak.
+     * @param message the message to speak.
+     * @param address the address of the pepper robot.
+     */
+    //% blockId=pepperSpeak block="speak %message on %address"
+    //% shim=pepper::speakAsync promise
+    function speak(message: string, address: string): void;
+
+}
 declare namespace turtle {
     /**
      * Moves the sprite forward
