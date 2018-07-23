@@ -14,6 +14,36 @@ declare namespace hare {
     function onLand(handler: (height: number, more: number, most: number) => void): void;
 
 }
+declare namespace azai {
+    /**
+     * Recognize image.
+     */
+    //% blockId=azaiRecognizeImage block="recognize image"
+    //% shim=azai::recognizeImageAsync promise
+    function recognizeImage(): void;
+
+    /**
+     * Detect text.
+     */
+    //% blockId=azaiDetectText block="detect text"
+    //% shim=azai::detectTextAsync promise
+    function detectText(): void;
+
+    /**
+     * Detect emotions.
+     */
+    //% blockId=azaiDetectEmotions block="detect emotions"
+    //% shim=azai::detectEmotionsAsync promise
+    function detectEmotions(): void;
+
+    /**
+     * Detect obstacle.
+     */
+    //% blockId=azaiDetectObstacle block="detect obstacle"
+    //% shim=azai::detectObstacleAsync promise
+    function detectObstacle(): void;
+
+}
 declare namespace pepper {
     /**
      * Get pepper to speak.
@@ -23,6 +53,48 @@ declare namespace pepper {
     //% blockId=pepperSpeak block="speak %message on %address"
     //% shim=pepper::speakAsync promise
     function speak(message: string, address: string): void;
+
+    /**
+     * Set Pepper's lights
+     */
+    //% blockId=pepperSetLights block="set lights"
+    //% shim=pepper::setLightsAsync promise
+    function setLights(): void;
+
+    /**
+     * Capture image from Pepper's eyes.
+     */
+    //% blockId=pepperCaptureImage block="capture image"
+    //% shim=pepper::captureImageAsync promise
+    function captureImage(): void;
+
+    /**
+     * Turn left.
+     */
+    //% blockId=pepperTurnLeft block="turn left"
+    //% shim=pepper::turnLeftAsync promise
+    function turnLeft(): void;
+
+    /**
+     * Turn right.
+     */
+    //% blockId=pepperTurnRight block="turn right"
+    //% shim=pepper::turnRightAsync promise
+    function turnRight(): void;
+
+    /**
+     * Roll forward.
+     */
+    //% blockId=pepperRollForward block="roll forward"
+    //% shim=pepper::rollForwardAsync promise
+    function rollForward(): void;
+
+    /**
+     * Roll backward.
+     */
+    //% blockId=pepperRollBackward block="roll backward"
+    //% shim=pepper::rollBackwardAsync promise
+    function rollBackward(): void;
 
 }
 declare namespace turtle {

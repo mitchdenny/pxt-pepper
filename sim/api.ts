@@ -17,6 +17,42 @@ namespace pxsim.hare {
     }
 }
 
+namespace pxsim.azai
+{
+    /**
+     * Recognize image.
+     */
+    //% blockId=azaiRecognizeImage block="recognize image"
+    export function recognizeImageAsync() {
+        return Promise.delay(1000);
+    }
+
+    /**
+     * Detect text.
+     */
+    //% blockId=azaiDetectText block="detect text"
+    export function detectTextAsync() {
+        return Promise.delay(1000);
+    }
+
+    /**
+     * Detect emotions.
+     */
+    //% blockId=azaiDetectEmotions block="detect emotions"
+    export function detectEmotionsAsync() {
+        return Promise.delay(1000);
+    }
+
+    /**
+     * Detect obstacle.
+     */
+    //% blockId=azaiDetectObstacle block="detect obstacle"
+    export function detectObstacleAsync() {
+        return Promise.delay(1000);
+    }
+
+}
+
 namespace pxsim.pepper {
     /**
      * Get pepper to speak.
@@ -25,6 +61,54 @@ namespace pxsim.pepper {
      */
     //% blockId=pepperSpeak block="speak %message on %address"
     export function speakAsync(message: string, address: string) {
+        return Promise.delay(1000);
+    }
+
+    /**
+     * Set Pepper's lights
+     */
+    //% blockId=pepperSetLights block="set lights"
+    export function setLightsAsync() {
+        return Promise.delay(1000);
+    }
+
+    /**
+     * Capture image from Pepper's eyes.
+     */
+    //% blockId=pepperCaptureImage block="capture image"
+    export function captureImageAsync() {
+        return Promise.delay(1000);
+    }
+
+    /**
+     * Turn left.
+     */
+    //% blockId=pepperTurnLeft block="turn left"
+    export function turnLeftAsync() {
+        return Promise.delay(1000);
+    }
+
+    /**
+     * Turn right.
+     */
+    //% blockId=pepperTurnRight block="turn right"
+    export function turnRightAsync() {
+        return Promise.delay(1000);
+    }
+
+    /**
+     * Roll forward.
+     */
+    //% blockId=pepperRollForward block="roll forward"
+    export function rollForwardAsync() {
+        return Promise.delay(1000);
+    }
+
+    /**
+     * Roll backward.
+     */
+    //% blockId=pepperRollBackward block="roll backward"
+    export function rollBackwardAsync() {
         return Promise.delay(1000);
     }
 }
